@@ -8,6 +8,10 @@ from typing import List, Optional,Dict
 from db import db
 from graph import get_graph_data, get_node_neighbors
 from llm import chat_with_groq
+import os
+MONGO_URI = os.getenv("MONGO_URI")
+DB_NAME = os.getenv("DB_NAME")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 app = FastAPI(title="SAP O2C Graph API")
 
