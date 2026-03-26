@@ -4,7 +4,7 @@ load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-
+from typing import List, Optional
 from db import db
 from graph import get_graph_data, get_node_neighbors
 from llm import chat_with_groq
