@@ -6,7 +6,11 @@ import os
 import json
 import asyncio
 import argparse
+from dotenv import load_dotenv
 from motor.motor_asyncio import AsyncIOMotorClient
+
+# ✅ FIX: Load .env so MONGO_URI points to Atlas, not localhost
+load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 DB_NAME = os.getenv("DB_NAME", "sap_o2c")
@@ -62,6 +66,9 @@ def read_jsonl_dir(dir_path):
 
 
 async def ingest(data_dir: str):
+    print(f"Connecting to: {MONGO_URI[:40]}...")
+    print(f"Database: {DB_NAME}\n")
+
     client = AsyncIOMotorClient(MONGO_URI)
     db = client[DB_NAME]
 
