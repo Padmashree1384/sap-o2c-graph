@@ -1,0 +1,55 @@
+.node-tooltip {
+  position: absolute;
+  z-index: 100;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px 18px 12px;
+  min-width: 240px;
+  max-width: 320px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.06);
+  pointer-events: auto;
+}
+
+.tooltip-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.tooltip-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.tooltip-table tr { vertical-align: top; }
+
+.tt-key {
+  color: #374151;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 2.5px 12px 2.5px 0;
+  min-width: 90px;
+}
+
+.tt-val {
+  color: #6b7280;
+  word-break: break-all;
+  padding: 2.5px 0;
+}
+
+.tt-connections {
+  font-weight: 600;
+  color: #374151;
+}
+
+.tt-hidden {
+  font-style: italic;
+  color: #9ca3af;
+  font-size: 11px;
+  padding: 5px 0 2px;
+}

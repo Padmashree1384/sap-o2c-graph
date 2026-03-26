@@ -1,0 +1,37 @@
+.node-panel {
+  background: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  flex-shrink: 0;
+  max-height: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.node-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  flex-shrink: 0;
+}
+
+.node-icon { font-size: 18px; }
+.node-title { flex: 1; display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.node-type  { font-size: 10px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; }
+.node-label { font-size: 13px; font-weight: 600; color: #1e293b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.close-btn {
+  background: none; border: none; color: #94a3b8;
+  cursor: pointer; font-size: 13px; padding: 2px 6px;
+  border-radius: 4px; transition: all 0.15s; flex-shrink: 0;
+}
+.close-btn:hover { background: #f1f5f9; color: #475569; }
+
+.node-panel-body { overflow-y: auto; flex: 1; padding: 8px 16px; }
+
+.fields-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.fields-table td { padding: 3px 4px; vertical-align: top; }
+.field-key { color: #94a3b8; white-space: nowrap; padding-right: 12px; font-size: 11px; width: 40%; }
+.field-val { color: #334155; word-break: break-all; }
+.divider-row td { height: 6px; border-top: 1px solid #f1f5f9; }
