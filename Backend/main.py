@@ -21,7 +21,7 @@ app.add_middleware(
 
 class ChatRequest(BaseModel):
     message: str
-    history: list = []
+    history: Optional[List[str]] = None
 
 
 class ExpandRequest(BaseModel):
