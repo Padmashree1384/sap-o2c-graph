@@ -5,8 +5,8 @@ import ChatPanel from './components/ChatPanel';
 import NodeTooltip from './components/NodeTooltip';
 import Legend from './components/Legend';
 import './App.css';
-
-const API = process.env.REACT_APP_API_URL || '';
+const API = process.env.REACT_APP_API_URL || "http://localhost:8000";
+console.log("Using API URL:", API);
 
 const NODE_COLORS = {
   Customer:        '#e74c3c',
